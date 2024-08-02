@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.6.4.1 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Safe Browser&lt;/title&gt;
+  &lt;link rel=&quot;icon&quot; href=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9q2iRZnaN1sNfWNymTF6inR_aLy2-wxkZdg&amp;s&quot; type=&quot;image/x-icon&quot;&gt;
+  &lt;style&gt;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap');
+
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-image: url('https://media.istockphoto.com/id/962366210/photo/anonymous-hacker-with-laptop-in-front-of-binary-code-cyber-security.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=-BJLwYAzjTsXh5Zj_Qn-5HQ-MRYA2fr_SdXv7oqqSZk=');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+
+    h1 {
+      color: #fff;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+
+    .subtitle {
+      color: #fff;
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+
+    .logo {
+      width: 150px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+
+    form {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 600px;
+    }
+
+
+    input[type=&quot;text&quot;] {
+      padding: 10px;
+      width: 100%;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ff0000; /* Changed to red */
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+
+    button:hover {
+      background-color: #e60000; /* Darker red on hover */
+    }
+
+
+    p {
+      color: #ddd;
+      margin-top: 20px;
+      font-size: 1.2em;
+      font-weight: 400;
+    }
+
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+      form {
+        flex-direction: column;
+        width: 90%;
+      }
+
+
+      input[type=&quot;text&quot;] {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+
+      button {
+        width: 100%;
+      }
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9q2iRZnaN1sNfWNymTF6inR_aLy2-wxkZdg&amp;s&quot; alt=&quot;Safe Browser Logo&quot; class=&quot;logo&quot;&gt;
+    &lt;h1&gt;Welcome to Safe Browser&lt;/h1&gt;
+    &lt;div class=&quot;subtitle&quot;&gt;Your future depends on your today's actions&lt;/div&gt;
+   
+    &lt;form action=&quot;https://www.google.com/search&quot; method=&quot;get&quot; target=&quot;_blank&quot;&gt;
+      &lt;input type=&quot;text&quot; name=&quot;q&quot; placeholder=&quot;So what's the value, man?&quot;&gt;
+      &lt;input type=&quot;hidden&quot; name=&quot;safe&quot; value=&quot;active&quot;&gt; &lt;!-- SafeSearch enabled --&gt;
+      &lt;button type=&quot;submit&quot;&gt;Search&lt;/button&gt;
+    &lt;/form&gt;
+
+
+    &lt;p&gt;So what's the action, man?&lt;/p&gt;
+  &lt;/div&gt;
+
+
+  &lt;script&gt;
+    document.querySelector('form').addEventListener('submit', function(event) {
+      const query = document.querySelector('input[name=&quot;q&quot;]').value;
+      if (query.trim() === '') {
+        alert('Please enter a search query.');
+        event.preventDefault();
+      }
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
